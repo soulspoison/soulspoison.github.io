@@ -1,45 +1,129 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>js</title>
-<meta http-equiv="content-type" content="text/html;charset=utf-8">
-<script type="text/javascript">
-var re=0;
-function shows(a,b,c){
-	switch(b){
-	case "+":
-	re=parseInt(a)+parseInt(c);
-	break;
-	case "-":
-	re=a-c;
-	break;
-	case "*":
-	re=a*c;
-	break;
-	case "/":
-	re=a/c;
-	break;
-	case "%":
-	re=a%c;
-	break;
-}
-	document.form1.text.value=(re);
-}
-
-</script>
+	<title>My Soul's Poison</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0 auto;
+		}
+		body{
+			text-align: center;
+		}
+		#header{
+			width: 100%;
+			height:80px;
+			background:rgba(204,204,204,0.3);
+			text-align:left;	
+		}
+		#header h2{
+			line-height: 70px;;
+			margin-left: 18%;
+		}
+		#content{
+			width: 700px;
+			height: auto;
+			text-align: left;
+			margin-top:	20px;
+		}
+		#content h2{
+			margin-top: 20px;	
+		}
+		#content>p{
+			margin-top:20px;
+			margin-bottom:20px;
+			font-size:10px;
+			color: #333;
+		}
+		#content-one,#content-two,#content-three{
+			width: 700px;
+			height: 280px;
+			overflow: auto;
+				
+		}
+		#content-one div,#content-two div,#content-three div{
+			width: 680px;
+			height: 400px;
+			background: #000;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			color: #ccc;
+			font-size: 14px;	
+		}
+		#content-one h4{
+			margin-top:20px;
+			color: #ccc;
+			
+		}
+		#content-one p{
+			margin: 20px 0px 20px 20px;
+			color: #ccc;
+			font-size: 14px;
+		}
+	</style>
 </head>
 <body>
-  <form action="#" name="form1" method="post">
-    <input type="text" name="num1">
-    <select name="num">
-    <option value="+" selected>+</option>
-    <option value="-">-</option>
-    <option value="*">*</option>
-    <option value="/">/</option>
-    <option value="%">%</option>
-    </select>
-    <input type="text" name="num2">
-    <input type="button" name="but" value="结果" onclick="shows(document.form1.num1.value,document.form1.num.value,document.form1.num2.value)">
-    <input type="text" name="text" disabled>
-  </form>
+	<div id="header">
+		<h2>My Soul's Poison</h2>
+	</div>
+	<div id="content">
+		<h2>前端知识概要</h2>
+        <p>&nbsp;&nbsp;本文由本人搜集和整理了一些关于前端知识点，主要是由网上搜集经自己整理而来，如有侵权、错误，敬请告知（Zz_Aa@126.com）</p>
+        <h3>前端开发知识点</h3>
+        <div id="content-one">
+         	<div id="content-one-cen">
+            	<h4>HTML&CSS:</h4>
+                <p>
+                	对web标准的理解、浏览器内核差异、兼容性、hack、css基本功：布局、盒子模型、选择器优先级、HTML5、CSS3、Flexbox
+                </p>
+                <h4>JavaScript:</h4>
+                <p>
+                	数据类型、运算、对象、Function、继承、闭包、作用域、原型链、事件、RegExp、JSON、Ajax、DOM、BOM、内存泄漏、跨域、异步装载、模板引擎、前端MVC、路由、模块化、Canvas、ECMAScript 6、Nodejs
+                </p>
+                <h4>其他:</h4>
+                <p>
+                	移动端、响应式、自动化构建、HTTP、离线存储、WEB安全、优化、重构、团队协作、可维护、易用性、SEO、UED、架构、职业生涯、快速学习能力
+                </p>
+            </div>
+        </div>
+        <h3>前端必须掌握知识点</h3>
+        <div id="content-two">
+        	<div id="content-two-cen">
+            	<pre><code>
+  1、DOM结构 —— 两个节点之间可能存在哪些关系以及如何在节点之间任意移动。
+
+  2、DOM操作 —— 如何添加、移除、移动、复制、创建和查找节点等。
+
+  3、事件 —— 如何使用事件，以及IE和标准DOM事件模型之间存在的差别。
+
+  4、XMLHttpRequest —— 这是什么、怎样完整地执行一次GET请求、怎样检测错误。
+
+  5、严格模式与混杂模式 —— 如何触发这两种模式，区分它们有何意义。
+
+  6、盒模型 —— 外边距、内边距和边框之间的关系，及IE8以下版本的浏览器中的盒模型
+
+  7、块级元素与行内元素 —— 怎么用CSS控制它们、以及如何合理的使用它们
+
+  8、浮动元素 —— 怎么使用它们、它们有什么问题以及怎么解决这些问题。
+
+  9、HTML与XHTML —— 二者有什么区别，你觉得应该使用哪一个并说出理由。
+
+  10、JSON —— 作用、用途、设计结构。
+</code></pre>
+            </div>
+        </div>
+        <h3>HTML</h3>
+        <div id="content-three">
+        	<div id="content-three-cen">
+            <pre><code>
+  1. &lt;!DOCTYPE&gt;声明位于位于HTML文档中的第一行，处于 &lt;html&gt; 标签之前。告知浏览器的解析器用什么
+  文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。
+
+  2. 标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示,
+  模拟老式浏览器的行为以防止站点无法工作。
+</code></pre>
+            </div>
+        </div>
+	</div>
 </body>
 </html>
