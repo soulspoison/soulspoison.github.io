@@ -1,129 +1,640 @@
+<!--
+	作者：soulspoison
+	时间：2017-03-03
+	描述：
+-->	
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Soul's Poison</title>
-	<meta charset="utf-8">
-	<style type="text/css">
-		*{
-			margin: 0 auto;
-		}
-		body{
-			text-align: center;
-		}
-		#header{
-			width: 100%;
-			height:80px;
-			background:rgba(204,204,204,0.3);
-			text-align:left;	
-		}
-		#header h2{
-			line-height: 70px;;
-			margin-left: 18%;
-		}
-		#content{
-			width: 700px;
-			height: auto;
-			text-align: left;
-			margin-top:	20px;
-		}
-		#content h2{
-			margin-top: 20px;	
-		}
-		#content>p{
-			margin-top:20px;
-			margin-bottom:20px;
-			font-size:10px;
-			color: #333;
-		}
-		#content-one,#content-two,#content-three{
-			width: 700px;
-			height: 280px;
-			overflow: auto;
-				
-		}
-		#content-one div,#content-two div,#content-three div{
-			width: 680px;
-			height: 400px;
-			background: #000;
-			margin-top: 20px;
-			margin-bottom: 20px;
-			color: #ccc;
-			font-size: 14px;	
-		}
-		#content-one h4{
-			margin-top:20px;
-			color: #ccc;
+
+	<head>
+		<meta charset="utf-8">
+		<title>未来家VR</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="applicable-device" content="mobile"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="Keywords" content="邯郸室内设计，邯郸设计公司，邯郸效果图公司，邯郸建筑表现，邯郸建筑效果图，邯郸装修设计公司，邯郸全景制作，邯郸360全景，邯郸720全景，邯郸全景拍摄制作,邯郸全景效果图，邯郸建筑效果图，邯郸桥梁效果图，邯郸园林效果图，邯郸景观效果图，邯郸鸟瞰图，邯郸效果图，邯郸室外效果图，邯郸装修效果图，邯郸工装设计，邯郸工装效果图，邯郸办公设计，邯郸酒店设计，邯郸会所设计，邯郸KTV设计，邯郸饭店设计，邯郸厂房效果图，邯郸酒店效果图，邯郸办公效果图，邯郸会所效果图，邯郸KTV效果图，邯郸饭店效果图，邯郸别墅效果图，体验馆，装修体验馆，邯郸装修体验馆" />
+<meta name="Description" content="邯郸维度数字科技致力服务于邯郸室内设计，邯郸室内设计公司，邯郸设计公司，室内设计公司，效果图公司，邯郸室内设计，邯郸效果图公司，邯郸建筑表现，邯郸建筑效果图，装修设计，邯郸装修设计公司，邯郸全景制作，邯郸360全景，邯郸720全景，邯郸全景拍摄制作，720全景制作，邯郸360样板间，邯郸720样板间，邯郸全景效果图，全景效果图，邯郸全景公司，邯郸ipad售楼系统，邯郸售楼系统，邯郸售楼宝，邯郸ipad互动系统，邯郸电子楼书，ipad售楼系统，售楼系统，售楼宝，互动系统，电子楼书，360效果图，720效果图，建筑效果图，建筑表现，桥梁效果图，桥梁表现，园林效果图，景观效果图，邯郸建筑效果图，邯郸桥梁效果图，邯郸园林效果图，邯郸景观效果图，邯郸鸟瞰图，鸟瞰图，邯郸规划图，规划图，邯郸彩平图，彩色户型图，邯郸施工图制作，施工图，邯郸效果图培训，邯郸室内设计培训，邯郸3D效果图，3D效果图培训，360摄影，720摄影，邯郸360摄影，邯郸720摄影，邯郸效果图，邯郸效果图培训，邯郸建筑效果图培训，邯郸全景培训，邯郸室外效果图，邯郸室外效果图培训，邯郸设计师，邯郸3D学校，邯郸室内设计学校，邯郸效果图学校，邯郸建筑动画，建筑动画，邯郸地产动画，地产动画制作，邯郸房地产动画，房地产动画，桥梁动画，邯郸桥梁动画，邯郸3D动画，邯郸动漫，邯郸宣传片，邯郸电子杂志，邯郸ipad制作，邯郸app,邯郸app开发，邯郸app制作，邯郸数字科技，邯郸三维，邯郸3D，邯郸数字营销，微信全景，邯郸微信全景，微信360，微信720，装修效果图，邯郸装修效果图，样板间全景，样板间360全景，样板间720全景，别墅效果图，邯郸工装设计，邯郸工装效果图，工装效果图，邯郸办公设计，邯郸酒店设计，邯郸会所设计，邯郸KTV设计，邯郸饭店设计，邯郸厂房效果图，邯郸酒店效果图，邯郸办公效果图，邯郸会所效果图，邯郸KTV效果图，邯郸饭店效果图，体验馆，装修体验馆，邯郸装修体验馆，邯郸别墅效果图等。" />
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="fonts/iconfont.css" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style>
 			
-		}
-		#content-one p{
-			margin: 20px 0px 20px 20px;
-			color: #ccc;
-			font-size: 14px;
-		}
-	</style>
-</head>
-<body>
-	<div id="header">
-		<h2>My Soul's Poison</h2>
-	</div>
-	<div id="content">
-		<h2>前端知识概要</h2>
-        <p>&nbsp;&nbsp;本文由本人搜集和整理了一些关于前端知识点，主要是由网上搜集经自己整理而来，如有侵权、错误，敬请告知（Zz__Aa@126.com）</p>
-        <h3>前端开发知识点</h3>
-        <div id="content-one">
-         	<div id="content-one-cen">
-            	<h4>HTML&CSS:</h4>
-                <p>
-                	对web标准的理解、浏览器内核差异、兼容性、hack、css基本功：布局、盒子模型、选择器优先级、HTML5、CSS3、Flexbox
-                </p>
-                <h4>JavaScript:</h4>
-                <p>
-                	数据类型、运算、对象、Function、继承、闭包、作用域、原型链、事件、RegExp、JSON、Ajax、DOM、BOM、内存泄漏、跨域、异步装载、模板引擎、前端MVC、路由、模块化、Canvas、ECMAScript 6、Nodejs
-                </p>
-                <h4>其他:</h4>
-                <p>
-                	移动端、响应式、自动化构建、HTTP、离线存储、WEB安全、优化、重构、团队协作、可维护、易用性、SEO、UED、架构、职业生涯、快速学习能力
-                </p>
-            </div>
-        </div>
-        <h3>前端必须掌握知识点</h3>
-        <div id="content-two">
-        	<div id="content-two-cen">
-            	<pre><code>
-  1、DOM结构 —— 两个节点之间可能存在哪些关系以及如何在节点之间任意移动。
+			.title{
+				margin: 20px 15px 10px;
+				color: #fff;
+				font-size: 15px;
+			}
+			
+			.oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+	
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+			
+			.menu-vr{
+				width: 50px;
+				height: 50px;
+				position: fixed;
+				left: 50%;
+				bottom: 21px;
+				z-index: 9999;
+				margin-left: -25px;	
+				border-radius: 50%;	
+			}
+		</style>
+	</head>
 
-  2、DOM操作 —— 如何添加、移除、移动、复制、创建和查找节点等。
+	<body>
+		
+		<a href="vr-01.html"><img src="img/tab-01.png" class="menu-vr"></a>
+		<nav class="mui-bar mui-bar-tab" style="background: #fff;">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<span class="mui-icon iconfont icon-shouye-shouye"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon iconfont icon-tuku-"></span>
+				<span class="mui-tab-label">效果图</span>
+			</a>
+			<a class="mui-tab-item" href="vr-01.html">
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">体验馆</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<span class="mui-icon iconfont icon-youhuiquan"></span>
+				<span class="mui-tab-label">优惠券</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-map">
+				<span class="mui-icon iconfont icon-gr2"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		<div class="mui-content">
+			
+			<div id="tabbar" class="mui-control-content mui-active" style="margin-top:44px;">
+				<header class="mui-bar mui-bar-nav container" style="background: #fff;">
+			<img src="img/logo.png" height="auto" width="38%" style="float:left;">
+			<form id="search_box" method="post" action="#">
+			        <input type="image" src="img/btn.png" width="20px" height="20px" id="go" click="">
+			        <input type="text" id="s" placeholder="查找我的家">			        
+			</form>
+   
+		</header>
+		<div id="slider" class="mui-slider" >
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="img/main-6.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/main-1.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/main-2.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/main-3.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/main-4.jpg">
+					</a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/main-6.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="img/main-1.jpg">
+					</a>
+				</div>
+			</div>
+			<!--轮播显示点-->
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+			</div>
+			<!--导航-->
+				<div class="menu-list">
+					<a href="vr-01.html" _click="openIt" data-name="menu" class="menu-item">
+					<img src="img/tab-1.png">
+					<br>VR样板间</a>
+					<a href="vr-02.html" _click="openIt" data-name="menu" class="menu-item">
+					<img src="img/tab-2.png">
+					<br>设计DIY</a>
+					<a href="com.html" _click="openIt" data-name="menu" class="menu-item">
+					<img src="img/tab-3.png">
+					<br>装修公司</a>
+					<a href="shop.html" _click="openIt" data-name="menu" class="menu-item">
+					<img src="img/tab-4.png">
+					<br>主材商家</a>
+				</div>
+				<div class="cut">
+					<div style="visibility: hidden;">/</div>
+				</div>
+				<div class="reco">
+					<img src="img/news.png" height="40px" width="auto" style="float:left;margin-left:2%;margin-top:4px;padding-right:2%;border-right:1px #e9e9e9 solid;">
+					<div id="news">
+						<div id="pic"><div>美的城王先生申请免费设计</div><div>美的城王先生申请免费设计</div><div>美的城王先生申请免费设计</div></div>
+					</div>
+				</div>
+				<div class="cut">
+					<div style="visibility: hidden;">/</div>
+				</div>
+				<!--中间界面-->
+				<div id="content">
+					<div id="vrbmc">
+						<div style="font-size:1.0em;margin-top: 13px;">VR装饰城</div>
+						<div style="font-size:0.8em;color:#aaa;margin-bottom: 10px;">省钱&nbsp;&nbsp;省时&nbsp;&nbsp;省力</div>
+						<img src="img/index-01.png" width="85%" style="margin-top: 8%;">
+					</div>
+					<div id="content1">
+						<div id="vrapply">
+							<a href="order.html" style="color: #000;">
+							<div style="font-size:1.0em;float:left;margin-top: 10px;margin-left: 10px;">免费设计<img src="img/index-hot.png" height="16px" width="auto" style="margin-bottom: 3px;"><br><font color="#aaa" style="font-size:0.8em;">VR体验&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></div>
+							
+							<img src="img/index-02.png" height="auto" width="35%" style="margin-top:4%;">
+							</a>
+						</div>
+						<div id="content2">
+							<div id="offer">
+								<a href="order.html" style="color: #000;">
+								<div style="margin-top:10px">免费报价</div>
+								<img src="img/index-03.png" width="85%" style="margin-top: 8%;"></a>
+							</div>
+							<div id="counter">
+								<a href="counter.html" style="color: #000;">
+								<div style="margin-top:10px">装修计算器</div>
+								<img src="img/index-04.png" width="50%" style="margin-top: 12%;"></a>
+							</div>							
+						</div>
+					</div>
+					
+				</div>
+				<!--后续拖动页面-->
+				<div class="cut">
+					<div style="visibility: hidden;">/</div>
+				</div>
+				<div id="recom">
+					<div class="reco"><div class="recol">/</div><font color="#000">VR样板间</font> · 所见即所得</div>
+					 	<div class="reccc">
+						<a href="bee.html" style="margin-left:3%;margin-right: 2%;">
+							<img src="img/main-03.jpg">
+							<div class="fon" style="border:1px solid #e9e9e9;border-top:0px;">美的城/现代/客厅  </div>							
+						</a>
+						<a href="#" style="margin-left:2%;margin-right: 3%;">
+							<img src="img/main-03.jpg">
+							<div class="fon" style="border:1px solid #e9e9e9;border-top:0px;">158方北欧三居</div>	
+						</a>
+						</div>
+						<div class="reccc">
+						<a href="bee.html" style="margin-left:3%;margin-right: 2%;">
+							<img src="img/main-03.jpg">
+							<div class="fon" style="border:1px solid #e9e9e9;border-top:0px;">60方简约一居</div>							
+						</a>
+						<a href="#" style="margin-left:2%;margin-right: 3%;">
+							<img src="img/main-03.jpg ">
+							<div class="fon" style="border:1px solid #e9e9e9;border-top:0px;">158方北欧三居</div>	
+						</a>
+						
+						</div>
+						<div style="width: 100%;height: 46px;font-size:0.7em;line-height: 46px;"><a href="vr-01.html" style="padding: 5px 4%;border:1px #b9b9b9 solid;border-radius: 20px;">&nbsp;&nbsp;查看更多 〉</a></div>
+				</div>
+				<div class="cut">
+					<div style="visibility: hidden;">/</div>
+				</div>
+				<div id="recom">
+					<div class="reco"><div class="recol">/</div><font color="#000">设计DIY</font> · 人人都是设计师</div>
+					 	<div class="reccc">
+						<a href="bee.html" style="margin-left:3%;margin-right: 2%;">
+							<img src="img/main-03.jpg">
+							<div class="fon" style="border:1px solid #e9e9e9;border-top:0px;">美的城/现代/客厅  </div>							
+						</a>
+						<a href="#" style="margin-left:2%;margin-right: 3%;">
+							<img src="img/main-03.jpg">
+							<div class="fon" style="border:1px solid #e9e9e9;border-top:0px;">158方北欧三居</div>	
+						</a>
+						</div>
+						<div class="reccc">
+						<a href="bee.html" style="margin-left:3%;margin-right: 2%;">
+							<img src="img/main-03.jpg">
+							<div class="fon" style="border:1px solid #e9e9e9;border-top:0px;">60方简约一居</div>							
+						</a>
+						<a href="#" style="margin-left:2%;margin-right: 3%;">
+							<img src="img/main-03.jpg ">
+							<div class="fon" style="border:1px solid #e9e9e9;border-top:0px;">158方北欧三居</div>	
+						</a>
+						
+						</div>
+						<div style="width: 100%;height: 46px;font-size:0.7em;line-height: 46px;"><a href="vr-01.html" style="padding: 5px 4%;border:1px #b9b9b9 solid;border-radius: 20px;">&nbsp;&nbsp;查看更多 〉</a></div>
+				</div>
+				<!--商家图标展示-->
+				<div class="cut">
+					<div style="visibility: hidden;">/</div>
+				</div>
+				<div id="Gallery" class="mui-slider">
+					<div class="reco" style="z-index: -1;"><div class="recol">/</div><font color="#000">推荐商家</font></div>
+					<div class="mui-slider-indicator" style="position:absolute;top:16px;text-align: right; margin-left: -4%;">
+						<div class="mui-indicator mui-active"></div>	
+						<div class="mui-indicator"></div>
+					</div>
+				<div class="mui-slider-group mui-slider-loop">
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-07.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-08.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-09.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-10.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-11.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-12.jpg">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-01.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-02.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-03.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-04.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-05.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-06.jpg">
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-07.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-08.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-09.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-10.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-11.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-12.jpg">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-01.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-02.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-03.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-04.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-05.jpg">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<img src="img/index-shop-06.jpg">
+								</a>
+							</li>
+						</ul>
+					</div>				
+			</div>
+			
+		</div>
+			<div style="width: 100%;height: 46px;font-size:0.7em;line-height: 46px;margin-top:5px;margin-bottom:40px;">
+				<a href="shop.html" style="z-index:999;padding: 5px 4%;border:1px #b9b9b9 solid;border-radius: 20px;color:#000;">&nbsp;&nbsp;更多商家 〉</a>
+			</div>
+			</div>
+			<!--首页面结束-->
+			<div id="tabbar-with-chat" class="mui-control-content">
+				 <iframe src="pic.html" id="iframepage" frameborder="0" width="100%" height="800px"></iframe>
+				
+					
+			</div>
+			<div id="tabbar-with-contact" class="mui-control-content">
+				<header class="mui-bar mui-bar-nav" style="background: #fff;">
+					<span style="float:left;font-size:1em;line-height: 44px;margin-left: 4%;">领券中心</span>
+					
+						<input type="text" placeholder="搜 索 商 家">
+					
+				</header>
+				<div id="quan">
+				<img src="img/quan.png" width="95%" height="auto" style="margin-top: 10px;background: #EFEFF4;">
+				<img src="img/quan.png" width="95%" height="auto" style="margin-top: 10px;background: #EFEFF4;">
+				<img src="img/quan.png" width="95%" height="auto" style="margin-top: 10px;background: #EFEFF4;">
+				</div>
+			</div>
+			<div id="tabbar-with-map" class="mui-control-content">
+				<!--未登录页面-->
+				<!--<header class="mui-bar mui-bar-nav" style="background: #fff;">		
+					<h1 class="mui-title">登录</h1>
+					
+				</header>
+				<form name="login" id="login" action="#" method="post" style="margin-top: 44px;">
+						<p>用未来家账号登录</p>
+						<input type="text" placeholder="注册邮箱/手机号"><br>
+						<input type="password" placeholder="密码"><br>
+						<input type="button" value="登录" style="height:45px;background: #3a6;text-align: center;color:#fff;"><br>
+						<p>用手机号快速登录</p>
+						<a href="p-login.html" style="display:block;height:45px;width:95%;background: #3a6;line-height:45px;margin-left:2.5%;text-align: center;color:#fff;">手机快速登录</a>
+						<p>用第三方账号快速登录</p>
+						<img src="img/login-01.png" width="15%" height="auto">
+						<img src="img/login-02.png" width="15%" height="auto">
+				</form>-->
+				<!--登录后页面-->
+				<div class="headeee">
+					<div class="scul">
+						、
+					</div>
+					<div class="uname">
+						&nbsp;&nbsp;用户000000
+					</div>
+				</div>
+				<div class="menu-list">
+					<a href="vr-01.html" _click="openIt" data-name="menu" class="menu-item">
+					<img src="img/tab-5.png">
+					<br>我的方案</a>
+					<a href="vr-02.html" _click="openIt" data-name="menu" class="menu-item">
+					<img src="img/tab-6.png">
+					<br>收藏商品</a>
+					<a href="com.html" _click="openIt" data-name="menu" class="menu-item">
+					<img src="img/tab-7.png">
+					<br>优惠券</a>
+					<a href="shop.html" _click="openIt" data-name="menu" class="menu-item" style="visibility: hidden;">
+					<img src="img/tab-4.png">
+					<br>我的佣金</a>
+				</div>
+				<div class="cut">
+					<div style="visibility: hidden;">/</div>
+				</div>
+				<!--普通用户界面-->
+				<div style="display: none;">
+				<div class="choo">
+					<a href="#">
+						<div style="height:54px;width: 100%;border-bottom: #efeff4 solid 5px;">
+							<ul style="margin-left: -36px;list-style-type: none;margin-top: -21px;">
+								<li style="height:24px;width: 100%;color:#000;line-height:20px;float:left;background:url(img/tab-9.png) no-repeat;background-size:18px auto;margin-top:16px;margin-left:10px;text-align: left;padding-left: 30px;font-size:0.9em;">个人设置</li>
+							</ul>
+						</div>
+					</a><a href="#">
+						<div style="height:54px;width: 100%;border-bottom: #efeff4 solid 5px;">
+							<ul style="margin-left: -36px;list-style-type: none;margin-top: -21px;">
+								<li style="height:24px;width: 100%;color:#000;line-height:20px;float:left;background:url(img/tab-10.png) no-repeat;background-size:18px auto;margin-top:16px;margin-left:10px;text-align: left;padding-left: 30px;font-size:0.9em;">账号绑定</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<div class="cut">
+					<div style="visibility: hidden;">/</div>
+				</div>
+				<div class="sheji">
+					<div class="shangjia"><img src="img/e3.png"><div>商家入驻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></div>
+					<div class="shangjia"><img src="img/e2.png"><div>装修公司入驻</div></div>
+					
+				</div>
+				<div class="sheji">
+					<div class="shangjia"><img src="img/e1.png"><div>设计师入驻&nbsp;&nbsp;&nbsp;&nbsp;</div></div>
+					<div class="shangjia"><img src="img/e4.png"><div>工长入驻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></div>
+				</div>
+				<div style="height:54px;width: 100%;border-top: #efeff4 solid 5px;padding-top: 21px;border-bottom:1px solid #efeff4;">
+							<ul style="margin-left: -36px;list-style-type: none;margin-top: -21px;">
+								<li style="height:24px;width: 100%;color:#000;line-height:20px;float:left;background:url(img/tab-11.png) no-repeat;background-size:18px auto;margin-top:16px;margin-left:10px;text-align: left;padding-left: 30px;font-size:0.9em;">退出</li>
+							</ul>
+				</div>
+				</div>
+				<!--商家页面-->
+				
+					<a href="myshop.html" style="border-bottom:#000 1px solid;">
+					<div style="height:54px;width: 100%;overflow: hidden;">
+							<ul style="margin-left: -36px;list-style-type: none;float:left;">
+								<li style="height:24px;width: 100%;color:#000;line-height:20px;float:left;background:url(img/c12.png) no-repeat;background-size:16px auto;margin-left:10px;text-align: left;padding-left: 30px;font-size:0.9em;">店铺设置</li>
+							</ul>
+							<span class="mui-icon iconfont icon-14" style="font-size: 1.5em;display: inline-block;line-height: 48px;float: right;margin-right: 10px;color:#aaa;"></span>
+						</div>
+					</a><a href="#">
+						<div style="height:54px;width: 100%;border-top: #f4f4f4 solid 1px;clear:both;overflow: hidden;">
+							<ul style="margin-left: -36px;list-style-type: none;float:left;">
+								<li style="height:24px;width: 100%;color:#000;line-height:24px;background:url(img/c13.png) no-repeat;background-size:16px auto;margin-left:10px;text-align: left;float: left;padding-left: 30px;font-size:0.9em;">店铺首页</li>
+							</ul>
+						<span class="mui-icon iconfont icon-14" style="font-size: 1.5em;display: inline-block;line-height: 48px;float: right;margin-right: 10px;color:#aaa;"></span>
+						</div>
+					</a>
+					
+					<div class="cut">
+						<div style="visibility: hidden;">/</div>
+					</div>
+					<a href="#">
+					<div style="height:54px;width: 100%;">
+							<ul style="margin-left: -36px;list-style-type: none;margin-top: -21px;">
+								<li style="height:24px;width: 100%;color:#000;line-height:20px;float:left;background:url(img/c2.png) no-repeat;background-size:16px auto;margin-top:16px;margin-left:10px;text-align: left;padding-left: 30px;font-size:0.9em;">升级为认证商家</li>
+							</ul>
+							<a href="#" style="float: right;color:#aaa;font-size: 0.7em;margin-top: -25px;">什么是认证商家?&nbsp;&nbsp;</a>
+						</div>
+					</a><a href="#">
+						<div style="height:54px;width: 100%;border-top: #f4f4f4 solid 1px;">
+							<ul style="margin-left: -36px;list-style-type: none;margin-top: -16px;">
+								<li style="height:24px;width: 100%;color:#000;line-height:20px;float:left;background:url(img/c1.png) no-repeat;background-size:16px auto;margin-top:16px;margin-left:10px;text-align: left;padding-left: 30px;font-size:0.9em;">升级为VIP商家</li>
+							</ul>
+							<a href="#" style="float: right;color:#aaa;font-size: 0.7em;margin-top: -25px;">什么是VIP商家?&nbsp;&nbsp;</a>
+						</div>
+					</a>
+					<div class="cut">
+						<div style="visibility: hidden;">/</div>
+					</div>
+					<div style="height:54px;width: 100%;padding-top: 21px;border-bottom:1px solid #efeff4;">
+							<ul style="margin-left: -36px;list-style-type: none;margin-top: -21px;">
+								<li style="height:24px;width: 100%;color:#000;line-height:20px;float:left;background:url(img/tab-11.png) no-repeat;background-size:20px auto;margin-top:16px;margin-left:10px;text-align: left;padding-left: 30px;font-size:0.9em;">退出</li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function mar() {
+	          if(document.getElementById("news").scrollTop>=50){
+	            document.getElementById("pic").appendChild(document.getElementById("pic").firstChild);
+	            
+	            window.clearInterval(maybar);
+	            document.getElementById("news").scrollTop=0;
+	            setTimeout("mbr()",2000);
+	            // document.getElementById("nav").scrollLeft+=10;
+	            }else{
+	            document.getElementById("news").scrollTop+=10;
+	           }
+	        }
+	        function mbr(){
+	        	maybar=window.setInterval("mar()",100);
+			}
+			mbr();
+		</script>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+	
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		// 监听tap事件，解决 a标签 不能跳转页面问题
+		mui('body').on('tap','a',function(){document.location.href=this.href;});
+		var slider = mui("#slider");
+			slider.slider({
+				interval: 4000
+			});
+			var slider1 = mui("#Gallery");
+			slider1.slider({
+				interval: 2000
+			});
+		var transparentApi;
+			var slider = document.getElementById("slider");
+			mui('.mui-input-group').on('change', 'input', function() {
+				if (this.checked) {
+					switch (this.value) {
+						case 'left-none':
 
-  3、事件 —— 如何使用事件，以及IE和标准DOM事件模型之间存在的差别。
+							document.getElementById("img1").className = "";
+							document.getElementById("slider").classList.add("mui-hidden");
+							break;
+						case 'left-icon':
+							document.getElementById("img1").className = "mui-hidden";
+							if(slider.classList.contains("mui-hidden")){
+								document.getElementById("slider").classList.remove("mui-hidden");
+							}
+							break;
 
-  4、XMLHttpRequest —— 这是什么、怎样完整地执行一次GET请求、怎样检测错误。
-
-  5、严格模式与混杂模式 —— 如何触发这两种模式，区分它们有何意义。
-
-  6、盒模型 —— 外边距、内边距和边框之间的关系，及IE8以下版本的浏览器中的盒模型
-
-  7、块级元素与行内元素 —— 怎么用CSS控制它们、以及如何合理的使用它们
-
-  8、浮动元素 —— 怎么使用它们、它们有什么问题以及怎么解决这些问题。
-
-  9、HTML与XHTML —— 二者有什么区别，你觉得应该使用哪一个并说出理由。
-
-  10、JSON —— 作用、用途、设计结构。
-</code></pre>
-            </div>
-        </div>
-        <h3>HTML</h3>
-        <div id="content-three">
-        	<div id="content-three-cen">
-            <pre><code>
-  1. &lt;!DOCTYPE&gt;声明位于位于HTML文档中的第一行，处于 &lt;html&gt; 标签之前。告知浏览器的解析器用什么
-  文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。
-
-  2. 标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后
-  兼容的方式显示,模拟老式浏览器的行为以防止站点无法工作。
-</code></pre>
-            </div>
-        </div>
-	</div>
-</body>
+					}
+				}
+			});	
+			
+	</script>
+	<script>
+//					function changeFrameHeight(){
+//					    var ifm= document.getElementById("iframepage");  
+//					    ifm.height=document.documentElement.clientHeight;
+//					}
+//					window.onresize=function(){  
+//					     changeFrameHeight();  
+//					} 
+	</script>
+	
 </html>

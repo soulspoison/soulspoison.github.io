@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name="applicable-device" content="mobile"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no" />
+<title>未来家VR</title>
+<link rel="stylesheet" href="css/mui.min.css">
+<link rel="stylesheet" type="text/css" href="css/com.css"/>
+<script src="js/mui.min.js"></script>
+	<style>
+		form{
+			width: 90%;
+			margin-left: 5%;
+			text-align: left;
+			
+		}
+		input{
+			width: 80%;
+			text-align: left;
+			font-size:1.0em;
+			height: 50px;
+		}
+		form>div{
+			border:1px solid #ccc;
+			margin-bottom: 20px;
+			height: 42px;
+			border-radius: 5px;
+		}
+		#name{
+			width: 60%;
+			height: 42px;
+			float:left;
+		}
+		#tele{
+			width: 60%;
+			height: 42px;
+			float:left;
+		}
+		select{			
+				font-size:1.0em;	
+			    appearance:none;
+			    -moz-appearance:none;
+			    -webkit-appearance:none;
+    			background: url("img/arrow.png") no-repeat scroll right center transparent;
+			}
+			select::-ms-expand { display: none; }
+		
+			
+			#choose{
+				width:100%;
+				height: 100px;
+				overflow: hidden;
+				border: 1px solid #ccc;
+				
+			}
+			#choose>p{
+				border: solid 1px #aaa;
+				float: left;
+				margin: 8px;
+				padding: 5px;
+				color:#000;
+			}
+	</style>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav" style="background: #fff;">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="index.html" style="color:#f57a3e"></a>
+		<h1 class="mui-title">预约登记</h1>
+	</header>
+	<img src="img/order-01.png" width="100%" height="auto" style="margin-top: 44px;">
+	<img src="img/order-tab.jpg" width="100%" height="auto">
+	<form id="order" action="#" method="post">
+		<input type="text" id="addre" placeholder="请输入您所在的小区">
+		<div><select style="color:#aaa;">
+			<option value="">请选择您的房间面积</option>
+			<option value="3">100平以内</option>
+			<option value="5">100-150平</option>
+			<option value="10">150-200平</option>
+			<option value="20">200-300平</option>
+			<option value="30">300平以上</option>
+		</select></div>
+		<div><select style="color:#aaa;">
+			<option value="">请选择您的房间风格</option>
+			<option value="3">现代简约</option>
+			<option value="5">简欧</option>
+			<option value="10">欧式</option>
+			<option value="20">新中式</option>
+			<option value="30">中式</option>
+			<option value="30">美式</option>
+			<option value="30">田园</option>
+			<option value="30">地中海</option>
+			<option value="30">东南亚</option>
+			<option value="30">北欧</option>
+			<option value="30">混搭</option>
+		</select></div>
+		<div><select style="color:#aaa;">
+			<option value="">请选择您的预算</option>
+			<option value="3">3万以内</option>
+			<option value="5">3-5万</option>
+			<option value="10">5-10万</option>
+			<option value="20">10-20万</option>
+			<option value="30">20-30万</option>
+			<option value="30+">30万以上</option>
+		</select></div>
+		<div><select style="color:#aaa;">
+			<option value="">请选择您的需求阶段</option>
+			<option value="3">设计</option>
+			<option value="5">施工</option>
+			<option value="10">设计+施工</option>
+			
+		</select></div>
+		<input type="text" id="name" class="name" placeholder="请输入您的称呼">
+		<div style="width:35%; margin-left: 65%;"><select style="color:#aaa;">
+			<option value="">先生</option>
+			<option value="">女士</option>
+		</select></div>
+		
+		<input type="text" id="tele" placeholder="请输入您的联系方式">
+		<div style="width:35%; margin-left: 65%;border:0px"><input type="button" value="获取验证码" style="height: 42px;width: 100%;border:0px;background: #F57A3E;color:#fff;"></div>
+		<input type="text" id="rrr" placeholder="请输入验证码">
+		
+			<input type="button" value="提 交" style="color:#fff;width: 100%;margin-top: 5px;background: #f57a3e;height: 40px;border-radius: 5px;border:0px;margin-bottom: 10px;font-size:1.0em;">
+		
+	</form>
+	<div id="choose" style="display: none;">
+		<p>XX小区</p><p>XX小区</p><p>XX小区</p><p>XX小区</p><p>XX小区</p><p>XX小区</p><p>XX小区</p><p>XX小区</p><p>XX小区</p>
+	</div>
+</body>
+</html>
