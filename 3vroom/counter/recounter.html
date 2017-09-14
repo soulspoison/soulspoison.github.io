@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="applicable-device" content="mobile"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no" />
+<title>【提前还贷计算器】</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/counter.js" ></script>
+<script type="text/javascript" src="//static.tugou.com/m/js/rem50.js"></script>
+<link rel="stylesheet" href="../css/reset.css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="../css/counter.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+    <div class="calc-header">
+        <div class="loan-header">
+            <span class="back-arrow calc-sprite"></span>
+            <h2>提前还款计算器</h2>
+            <button type="button" name="button" class="calc-submit">计算</button>
+        </div>
+        <ul class="loan-tabs"><li class="li-left active" tab-target="tab-sy"><span>商业贷款</span></li><li class="li-right" tab-target="tab-gjj"><span>公积金贷款</span></li></ul>
+    </div>
+    <input type="hidden" name="calcName" value="prepay">
+    <input type="hidden" name="loan-type" value="1">
+    <div class="prepay-container">
+        <div class="prepay-input-panel">
+            <div class="tab-sy active">
+                <div class="input-panel">
+                    <ul>
+                        <li class="input-item">
+                            <label>贷款金额</label><label class="fright">万</label><input type="number" name="loan-total" value="" class="fright">
+                        </li>
+                        <li class="input-item">
+                            <label>商贷期限</label><select class="fright loan-select" name="loan-period">
+                                    <option value="1">1年（12期）</option>
+                                    <option value="2">2年（24期）</option>
+                                    <option value="3">3年（36期）</option>
+                                    <option value="4">4年（48期）</option>
+                                    <option value="5">5年（60期）</option>
+                                    <option value="6">6年（72期）</option>
+                                    <option value="7">7年（84期）</option>
+                                    <option value="8">8年（96期）</option>
+                                    <option value="9">9年（108期）</option>
+                                    <option value="10">10年（120期）</option>
+                                    <option value="11">11年（132期）</option>
+                                    <option value="12">12年（144期）</option>
+                                    <option value="13">13年（156期）</option>
+                                    <option value="14">14年（168期）</option>
+                                    <option value="15">15年（180期）</option>
+                                    <option value="16">16年（192期）</option>
+                                    <option value="17">17年（204期）</option>
+                                    <option value="18">18年（216期）</option>
+                                    <option value="19">19年（228期）</option>
+                                    <option selected="" value="20">20年（240期）</option>
+                                    <option value="25">25年（300期）</option>
+                                    <option value="30">30年（360期）</option>
+                            </select><span class="select-flag calc-sprite"></span>
+                        </li>
+                        <li class="input-item">
+                            <label>贷款方式</label><select class="fright loan-select" name="loan-pay-type">
+                                <option value="本息">等额本息</option>
+                                <option value="本金">等额本金</option>
+                            </select><span class="select-flag calc-sprite"></span>
+                        </li>
+                        <li class="input-item">
+                            <label>商贷利率</label><select class="fright loan-select" name="loan-rate-select-sy">
+                                    <option value="28">16年5月26日基准利率7折</option>
+                                    <option value="27">16年5月26日基准利率8.5折</option>
+                                    <option selected="" value="26">16年5月26日基准利率</option>
+                                    <option value="25">16年5月26日基准利率1.1倍</option>
+                                    <option value="24">15年6月28日基准利率7折</option>
+                                    <option value="23">15年6月28日基准利率8.5折</option>
+                                    <option value="22">15年6月28日基准利率</option>
+                                    <option value="21">15年6月28日基准利率1.1倍</option>
+                                    <option value="20">15年5月11日基准利率7折</option>
+                                    <option value="19">15年5月11日基准利率8.5折</option>
+                                    <option value="18">15年5月11日基准利率</option>
+                                    <option value="17">15年5月11日基准利率1.1倍</option>
+                                    <option value="16">15年3月1日基准利率7折</option>
+                                    <option value="15">15年3月1日基准利率8.5折</option>
+                                    <option value="14">15年3月1日基准利率</option>
+                                    <option value="13">15年3月1日基准利率1.1倍</option>
+                                    <option value="12">14年11月22日基准利率7折</option>
+                                    <option value="11">14年11月22日基准利率8.5折</option>
+                                    <option value="10">14年11月22日基准利率</option>
+                                    <option value="9">14年11月22日基准利率1.1倍</option>
+                                    <option value="8">12年7月6日基准利率7折</option>
+                                    <option value="7">12年7月6日基准利率8.5折</option>
+                                    <option value="6">12年7月6日基准利率</option>
+                                    <option value="5">12年7月6日基准利率1.1倍</option>
+                                    <option value="4">12年6月8日基准利率7折</option>
+                                    <option value="3">12年6月8日基准利率8.5折</option>
+                                    <option value="2">12年6月8日基准利率</option>
+                                    <option value="1">12年6月8日基准利率1.1倍</option>
+                            </select><span class="select-flag calc-sprite"></span>
+                        </li>
+                        <li class="input-item" style="display:none;">
+                            <label>公积金利率</label><select class="fright loan-select" name="loan-rate-select-gjj">
+                                <option value="7" selected="">16年1月1日基准利率</option>
+                                <option value="7">15年8月26日基准利率</option>
+                                <option value="6">15年6月28日基准利率</option>
+                                <option value="5">15年5月11日基准利率</option>
+                                <option value="4">15年3月1日基准利率</option>
+                                <option value="3">14年11月22日基准利率</option>
+                                <option value="2">12年7月6日基准利率</option>
+                                <option value="1">12年6月8日基准利率</option>
+                            </select><span class="select-flag calc-sprite"></span>
+                        </li>
+                        <li class="input-item">
+                            <label>首次还款时间</label><input type="month" name="prepay-first-date" value="2016-08" class="fright">
+                            <span class="select-flag calc-sprite"></span>
+                        </li>
+                        <li class="input-item">
+                            <label>预计提前还款时间</label><input type="month" name="prepay-predict-date" value="2016-09" class="fright">
+                            <span class="select-flag calc-sprite"></span>
+                        </li>
+                        <li class="input-item">
+                            <label>提前还款方式</label><select class="fright loan-select" name="prepay-type">
+                                <option value="1">一次性提前还清</option>
+                                <option value="2">部分提前还款</option>
+                            </select><span class="select-flag calc-sprite"></span>
+                        </li>
+                        <li class="input-item" style="display:none;">
+                            <label>提前还款金额</label><label class="fright">万</label><input type="number" name="prepay-amount" value="" class="fright ignore">
+                        </li>
+                        <li class="input-item" style="display:none;">
+                            <label>处理方式</label><select class="fright" name="prepay-for">
+                                <option value="1">缩短还款期限，月还款额基本不变</option>
+                                <option value="2">减少月还款额，还款期限不变</option>
+                            </select><span class="select-flag calc-sprite"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="prepay-result-panel" id="calc-result">
+            <p class="result-title">
+            </p>
+            <ul class="loan-rst-list">
+                <li class="input-item">
+                    <label>下月起还款额</label><label class="fright money-unit">元</label><input type="text" name="result-next-first" value="0" class="fright">
+                </li>
+                <li class="input-item">
+                    <label>原月还款额</label><label class="fright money-unit">元</label><input type="text" name="result-old-first" value="0" class="fright">
+                </li>
+                <li class="input-item">
+                    <label>该月一次还款额</label><label class="fright money-unit">元</label><input type="text" name="result-this-month" value="0" class="fright">
+                </li>
+                <li class="input-item">
+                    <label>已还款总额</label><label class="fright money-unit">元</label><input type="number" name="result-since-total" value="0" class="fright">
+                </li>
+                <li class="input-item">
+                    <label>已还款利息</label><label class="fright money-unit">元</label><input type="number" name="result-since-interest" value="0" class="fright">
+                </li>
+                <li class="input-item">
+                    <label>节约利息支出</label><label class="fright money-unit">元</label><input type="number" name="result-save-interest" value="0" class="fright">
+                </li>
+                <li class="input-item">
+                    <label>原还款日期</label><label class="fright money-unit"></label><input type="text" name="result-old-date" value="" class="fright">
+                </li>
+                <li class="input-item">
+                    <label>新还款日期</label><label class="fright money-unit"></label><input type="text" name="result-new-date" value="" class="fright">
+                </li>
+            </ul>
+            <p class="loan-rst-notice">
+                此结果仅供参考，实际应缴费以当地为准
+            </p>
+        </div>
+    </div>
+</body>
+</html>

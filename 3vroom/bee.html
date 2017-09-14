@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name="applicable-device" content="mobile"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no" />
+<title>未来家VR</title>
+<link rel="stylesheet" href="css/mui.min.css">
+<link rel="stylesheet" type="text/css" href="css/com.css"/>
+<script src="js/mui.min.js"></script>
+<style>
+	.boc{
+		display: inline-block;
+		position: absolute;
+		top:10px;
+		left: 10px;
+		z-index: 9999;
+		width: 7.5%;
+		height: 7.5vw;
+		background: rgba(0,0,0,0.6);
+		border-radius: 50%;
+	}
+	.bac{
+		height: 60%;
+		width: auto;
+		margin-top:20%;
+	}
+	#content{
+		text-align: left;
+		font-size:1.0em;
+	}
+	.price{
+		text-align: left;
+		margin-top: 4%;
+		margin-left: 4%;
+		
+	}
+	.det{
+		height: 500px;
+		width: 100%;
+		background: #EFEFF4;
+		margin-bottom: 50px;
+		
+	}
+	.quan{
+		text-align: left;
+		margin-left: 1%;
+		margin-top: -52px;
+		height: 45px;
+		width: 464px;
+		line-height: 45px;
+	}
+	.quan>img{
+		margin-left: 2%;
+		margin-top: 5px;
+	}
+	.intor{
+		width: 100%;
+		height: 135px;
+		margin-top: 5px;
+		border-top: #efeff4 10px solid;
+		text-align: left;
+		background: #fff;
+	}
+	.intor>span,.buy>span{
+		margin-left: 3%;
+		font-size: 0.8em;
+		color: #bbb;
+	}
+	.buy{
+		width: 100%;
+		height: 80px;
+		margin-bottom: 50px;
+		
+		border-top: #efeff4 8px solid;
+		text-align: left;
+		margin-top: 135px;
+		background: #fff;
+	}
+	footer{
+		width: 100%;
+		height: 50px;
+		position: fixed;
+		z-index: 9999;
+		left: 0;
+		bottom: 0;
+	}
+	.foot-l{
+		width: 32%;
+		height: 50px;
+		float: left;
+		font-size: 0.7em;
+		color:#666;
+	}
+	.foot-r{
+		width: 68%;
+		height: 50px;
+		float: right;
+		background: #f57a3e;
+	}
+</style>
+</head>
+<body>
+	<a href="e-shop.html" class="boc"><img src="img/back.png" class="bac"></a>
+	<div id="slider" class="mui-slider" style="margin-top: -24px;margin-bottom: 10px;">
+		
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="img/e-shop-01.png">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/e-shop-01.png">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/e-shop-02.png">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/e-shop-01.png">
+					</a>
+				</div>
+				
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="img/e-shop-01.png">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+	</div>
+	<div id="content" style="margin-left: 4%;">
+		<span>蜜蜂e家仿古砖厨房卫生间墙砖地砖防滑砖规格300*300</span><br>
+		<font color="#ff6801" style="font-size:0.9em;">源自意大利经典仿古别墅砖</font>
+	</div>
+	<div class="price">
+		<div style="text-align: left;margin-bottom: 2%;">￥<font color="#ff6801" style="font-size:1.8em;">126</font>/平米</div>
+		<del style="font-size:0.8em;margin-top: 4%;color:#bbb;">原价158/平米</del>
+	</div>
+	
+	<div class='det'>
+		<div style="height:40px;width: 100%;background: #fff;">
+			<ul style="margin-left: -40px;list-style: none;">
+					<li style="background:url(img/c8.png) no-repeat;background-size:15px 15px;float:left;padding-left:20px;margin-top: 12px;font-size: 0.8em;line-height: 15px;margin-left: 3%;">实体店选购</li>
+					<li style="background:url(img/c8.png) no-repeat;background-size:15px 15px;float:left;padding-left:20px;margin-top: 12px;font-size: 0.8em;line-height: 15px;margin-left: 3%;">支持优惠券</li>
+					<li style="background:url(img/c8.png) no-repeat;background-size:15px 15px;float:left;padding-left:20px;margin-top: 12px;margin-bottom: 6px;font-size: 0.8em;line-height: 15px;margin-left: 3%">售后保障</li>
+			</ul>
+		</div>
+		<div style="height: 60px;width: 100%;background: #fff;margin-top:5px;text-align: left;clear: both;">
+			<div style="width: 100%;height:45px;overflow: hidden;">
+				<div class="quan"><img src="img/quan-03.png" height="auto" width="116px"><img src="img/quan-03.png" height="auto" width="116px"><img src="img/quan-03.png" height="auto" width="116px"><img src="img/quan-03.png" height="auto" width="116px"></div>
+			</div>
+			<div class="intor">
+				<div style="margin:5px 0;">产品属性</div>
+				<span>型号<font color="#4a4a4a"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQI62655</font></span><br>
+				<span>尺寸<font color="#4a4a4a"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;300*600</font></span><br>
+				<span>适用房间<font color="#4a4a4a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;阳台 卫生间 厨房</font></span><br>
+				<span>产地<font color="#4a4a4a"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;佛山</font></span><br>
+			</div>
+		</div>
+		<div class="buy">
+			<div style="margin:5px 0;">购买须知</div>
+			<span>售后服务<font color="#4a4a4a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;线下门店购买，商家负责售后</font></span><br>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="foot-l">
+			<div style="width: 50%;float:left;border-right:1px solid #ccc;margin-top: 2px;"><img src="img/bee-03.png" width="auto" height="25px"><div style="margin-top: -6px;">收藏</div></div>
+			<div style="width: 50%;float:right;margin-top: 2px;"><img src="img/bee-02.png" width="auto" height="25px"><div style="margin-top: -6px;">评论</div></div>
+		</div>
+		<div class="foot-r">
+			<a href="#">商品VR/AR展示</a>
+		</div>
+		
+	</footer>
+</body>
+</html>

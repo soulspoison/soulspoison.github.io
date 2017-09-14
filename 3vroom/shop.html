@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name="applicable-device" content="mobile"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no" />
+<title>未来家VR</title>
+<link rel="stylesheet" href="css/mui.min.css">
+<link rel="stylesheet" type="text/css" href="css/com.css"/>
+<script src="js/mui.min.js"></script>
+	<style>
+		.container{
+			display: flex;
+			display: -webkit-flex;
+    			flex-direction: row;
+    			-webkit-flex-direction: row;
+    			justify-content: center;
+    			-webkit-justify-content: center;
+    			align-items: center;
+    			-webkit-align-items: center;
+    			width: 100%;    
+    			margin-top: -5px;			
+		}
+		.row{
+			
+			flex-grow: 1;
+			-webkit-flex-grow: 1;
+			background: #fff;
+			border-left: 1px solid #ccc;
+			border-top: 1px solid #ccc;
+			padding: 4% 0;
+			font-size:0.9em;
+		}
+		.row img{
+			width: 30%;
+			height: auto;
+			margin: 14% 0;
+		}
+	</style>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav" style="background: #fff;">
+		<a class="mui-icon mui-icon-left-nav mui-pull-left" href="index.html" style="color:#f57a3e"></a>
+		<h1 class="mui-title">主材商家</h1>
+	</header>
+	<img src="img/main-4.jpg" width="100%" height="auto"  style="margin-top: 44px;">
+	<section>
+		<div class="container">
+			<div class="row"><a href="t-shop.html" style="color:#000;"><img src="img/shop-01.png"><br>瓷砖</a></div>
+			<div class="row"><img src="img/shop-02.png"><br>地板</div>
+			<div class="row"><img src="img/shop-03.png"><br>壁纸</div>
+		</div>
+		<div class="container">
+			<div class="row"><img src="img/shop-04.png"><br>橱柜</div>
+			<div class="row"><img src="img/shop-05.png"><br>吊顶</div>
+			<div class="row"><img src="img/shop-06.png"><br>卫浴</div>
+		</div>
+		<div class="container">
+			<div class="row"><img src="img/shop-07.png"><br>定制</div>
+			<div class="row"><img src="img/shop-08.png"><br>门</div>
+			<div class="row"><img src="img/shop-09.png"><br>灯具</div>
+		</div>
+		<div class="container">
+			<div class="row"><img src="img/shop-10.png"><br>家具</div>
+			<div class="row"><img src="img/shop-11.png"><br>家纺</div>
+			<div class="row"><img src="img/shop-12.png"><br>配饰</div>
+		</div>
+	</section>
+
+</body>
+<script>
+	// 监听tap事件，解决 a标签 不能跳转页面问题
+		mui('body').on('tap','a',function(){document.location.href=this.href;});
+</script>
+</html>

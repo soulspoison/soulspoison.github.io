@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="applicable-device" content="mobile"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no" />
+<title>【涂料计算器】</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/counter.js" ></script>
+<script type="text/javascript" src="//static.tugou.com/m/js/rem50.js"></script>
+<link rel="stylesheet" href="../css/reset.css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="../css/counter.css" media="screen" title="no title" charset="utf-8">
+
+</head>
+<body>
+    <div class="calc-header">
+        <span class="back-arrow calc-sprite"></span>
+        <h2>涂料计算器</h2>
+        <button type="button" name="button" class="calc-submit">计算</button>
+    </div>
+    <input type="hidden" name="calcName" value="painting">
+    <div class="input-panel">
+        <ul>
+            <li class="input-item">
+                <label>建筑面积</label><label class="fright">m&sup2;</label><input type="number" name="house-area" value="" class="fright" valid-category="room">
+            </li>
+        </ul>
+    </div>
+    <div class="result-panel" id="calc-result">
+        <p class="result-title">
+            <span role="point-icon"></span>5升/桶是行业默认标准
+        </p>
+        <div class="result-bar result-paint-b">
+            <span class="result-desc">底漆用量</span><span class="result-value"></span><span class="result-unit">桶</span>
+        </div>
+        <div class="result-bar result-paint-f">
+            <span class="result-desc">面漆用量</span><span class="result-value"></span><span class="result-unit">桶</span>
+        </div>
+        <p class="result-notice">
+            以上结果仅供参考，用量以实际为准
+        </p>
+    </div>
+</body>
+</html>
