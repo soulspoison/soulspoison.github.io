@@ -11,9 +11,17 @@ a, img {
 body {
 	font:12px/180% Arial, Helvetica, sans-serif, "新宋体";
 }
-.demo {
-	width:60%;
-	margin:60px auto 0 auto;
+@media (max-width: 768px) {
+	.axis {
+		width:96%;
+		margin: 60px auto 0 auto;
+	}
+}
+@media (min-width: 768px) {
+	.axis {
+		width:60%;
+		margin:60px auto 0 auto;
+	}
 }
 /*history*/
 .history {
@@ -157,4 +165,3 @@ body {
 *font-size:12px!important;
 	_font-weight:normal!important;
 }
-/* 酷站代码整理 http://www.5icool.org */
