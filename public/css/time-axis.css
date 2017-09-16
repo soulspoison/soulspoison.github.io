@@ -14,13 +14,13 @@ body {
 @media (max-width: 768px) {
 	.axis {
 		width:96%;
-		margin: 60px auto 0 auto;
+		margin: 0 auto;
 	}
 }
 @media (min-width: 768px) {
 	.axis {
-		width:60%;
-		margin:60px auto 0 auto;
+		width: 60%;
+		margin: 0 auto;
 	}
 }
 /*history*/
