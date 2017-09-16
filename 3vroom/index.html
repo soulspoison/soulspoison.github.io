@@ -65,6 +65,84 @@
 				margin-left: -25px;	
 				border-radius: 50%;	
 			}
+			@keyframes rotation {
+		        10% {
+		            transform: rotate(90deg);
+		            -webkit-transform: rotate(90deg)
+		        }
+		        50% {
+		            transform: rotate(0);
+		            -webkit-transform: rotate(0)
+		        }
+		        60% {
+		            transform: rotate(0);
+		            -webkit-transform: rotate(0)
+		        }
+		        90% {
+		            transform: rotate(90deg);
+		            -webkit-transform: rotate(90deg)
+		        }
+		        100% {
+		            transform: rotate(90deg);
+		            -webkit-transform: rotate(90deg)
+		        }
+		    }
+		
+		    @-webkit-keyframes rotation {
+		        10% {
+		            transform: rotate(90deg);
+		            -webkit-transform: rotate(90deg)
+		        }
+		        50% {
+		            transform: rotate(0);
+		            -webkit-transform: rotate(0)
+		        }
+		        60% {
+		            transform: rotate(0);
+		            -webkit-transform: rotate(0)
+		        }
+		        90% {
+		            transform: rotate(90deg);
+		            -webkit-transform: rotate(90deg)
+		        }
+		        100% {
+		            transform: rotate(90deg);
+		            -webkit-transform: rotate(90deg)
+		        }
+		    }
+			.mod-layer {
+		        display: none;
+		        position: fixed;
+		        height: 100%;
+		        width: 100%;
+		        
+		        left: 0;
+		        top: 0;
+		        right: 0;
+		        bottom: 0;
+		        
+		        z-index: 99999
+		    }
+		    
+		     .mod-content {
+		        position: absolute;
+		        width: 100%;
+		        top: 45%;
+		        margin-top: -75px;
+		        text-align: center;
+		    }
+		     .mod-content>img{
+		    	transform: rotate(90deg);
+		        -webkit-transform: rotate(90deg);
+		        -webkit-animation: rotation 1.5s infinite ease-in-out;
+		        animation: rotation 1.5s infinite ease-in-out;
+		    }       
+		     .mod-desc {
+		        margin-top:30px;
+		        font-size: 15px;
+		        color: #fff
+		    }
+    
 		</style>
 	</head>
 
@@ -570,6 +648,41 @@
 				</div>
 			</div>
 		</div>
+		<div id="orientLayer" class="mod-layer" style="background: #000;">
+    		<div class="mod-content" style="background: #000;">
+        		<i class="icon mod-orient"></i>
+        		<img src="project/img/icon.png" style="background: #000;">
+	        	<div class="mod-desc" style="background: #000;">为了更好的体验，请在手机端浏览</div>
+    		</div>
+		</div>
+		<script>
+		//水平翻转效果
+		    var orientLayer = document.getElementById("orientLayer");
+		    //判断横屏竖屏
+		    function checkDirect() {
+		        if (document.documentElement.clientHeight <= document.documentElement.clientWidth) {
+		            return "portrait";
+		        } else {
+		            return "landscape";
+		        }
+		    }
+		    //显示屏幕方向提示浮层
+		    function orientNotice() {
+		        var orient = checkDirect();
+		        if (orient == "landscape") {
+		            orientLayer.style.display = "none";
+		        } else {
+		            orientLayer.style.display = "block";
+		        }
+		    }
+		    function init() {
+		        orientNotice();
+		        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {
+		            setTimeout(orientNotice, 200);
+		        })
+		    }
+		    init();
+		</script>
 		<script>
 			function mar() {
 	          if(document.getElementById("news").scrollTop>=50){
