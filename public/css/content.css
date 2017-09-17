@@ -1,0 +1,81 @@
+@media (max-width: 767px) {
+	.content{
+  		width: 90%;
+  		margin: 30px 4%;
+  	}
+  	.content-header{
+		font-size: 1.2em;
+		text-decoration: none;
+		color: #000;
+	}
+	.content-time{
+		font-size: 0.8em;
+		color: #888;
+		margin-top: 10px;
+	}
+	.content-desc{
+		font-size: 0.9em;
+		color: #555;
+		margin: 15px 0 0 24px; 
+	}
+	.content-description{
+		margin-bottom: 20px;
+	}
+	.content-link{
+		font-size: 0.9em;
+		color: #555;
+		padding-bottom: 2px;
+		border-bottom: 1px #555 solid; 
+	}
+	.content-link>span{
+		font-size: 0.8em;
+	}
+}
+@media (min-width: 767px){
+	.content{
+  		width: 60%;
+  		margin: 30px 20%;
+  	}
+  	.content-header{
+		font-size: 26px;
+		text-decoration: none;
+		color: #000;
+	}
+	.content-time{
+		font-size: 12px;
+		color: #888;
+		margin-top: 10px;
+	}
+	.content-desc{
+		font-size: 14px;
+		color: #555;
+		margin: 15px 0 0 24px; 
+	}
+	.content-description{
+		margin-bottom: 30px;
+	}
+	.content-link{
+		font-size: 14px;
+		color: #555;
+		padding-bottom: 2px;
+		border-bottom: 1px #555 solid; 
+	}
+	.content-link>span{
+		font-size: 10px;
+	}
+}
+.content-header:hover{
+	cursor:pointer;
+	color: #000;
+}
+.content-link:hover{
+	text-decoration: none;
+	color:#555;
+	cursor:pointer;
+}
+.content-description>a,.content-description>a:hover{
+	padding-bottom: 2px;
+	border-bottom: 1px #555 solid;
+	color: #555;
+	cursor: pointer;
+}
