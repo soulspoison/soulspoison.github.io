@@ -71,19 +71,24 @@
 	}
 }
 @media (min-width: 767px){
-	.totop{
+	.buttom-menu{
 		position: fixed;
 		bottom: 6%;
 		right: 5%;
 		z-index: 9999;
+		width: 30px;
+		height: auto;
+	}
+	.menu,.totop{
 		width: 30px;
 		height: 30px;
 		background: #000;
 		text-align: center;
 		line-height: 30px;
 		opacity: 0.9;
+		margin-bottom: 5px;
 	}
-	.totop>span{
+	.buttom-menu span{
 		color: #fff;
 	}
 }

@@ -64,6 +64,9 @@
 		font-size: 10px;
 	}
 }
+.content-center{
+		text-align: center;
+	}
 .content-header:hover{
 	cursor:pointer;
 	color: #000;
